@@ -1,0 +1,138 @@
+/* Home.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+  }
+  
+  .home-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #6a11cb;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #e84118;
+    transform: scale(1.05);
+  }
+  
+  .election-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .candidate-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    position: relative;
+    transition: box-shadow 0.3s;
+  }
+  
+  
+  
+  .candidate-section h3 {
+    margin: 0 0 10px 0;
+    color: #2575fc;
+    font-size: 1.5rem;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="file"] {
+    width: 90%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  .add-field-button,
+  .add-candidate-button,
+  .save-button,
+  .start-election-button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+ 
+  .extra-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    border: 1px dashed #6a11cb;
+    padding: 10px;
+    border-radius: 5px;
+    background: #e3f2fd;
+  }
+  
+  .extra-field label {
+    font-weight: normal;
+  }
+  
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 10px;
+      margin: 20px;
+    }
+  
+    .logout-button,
+    .add-field-button,
+    .add-candidate-button,
+    .save-button,
+    .start-election-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    input[type="text"],
+    textarea {
+      font-size: 14px;
+    }
+  }
+  
